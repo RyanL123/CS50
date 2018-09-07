@@ -1,3 +1,5 @@
+//Encrypts the text user inputs using the caesar cipher
+
 #include <stdio.h>
 #include <cs50.h>
 #include <string.h>
