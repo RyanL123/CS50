@@ -1,3 +1,5 @@
+//Encrypts the text user inputs using the vigenere cypher
+
 #include <stdio.h>
 #include <cs50.h>
 #include <string.h>
