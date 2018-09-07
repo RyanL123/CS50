@@ -1,3 +1,5 @@
+//Determines if the user's credit card is valid using Luhn's algorithm
+
 #include <stdio.h>
 #include <cs50.h>
 #include <math.h>
