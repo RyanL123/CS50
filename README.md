@@ -9,7 +9,7 @@ I started this course in 2018 but didn't have time to complete it. After 2 years
 - [x] Problem Set 1
 - [x] Problem Set 2
 - [x] Problem Set 3
-- [ ] Problem Set 4
+- [x] Problem Set 4
 - [ ] Problem Set 5
 - [X] Problem Set 6
 - [ ] Problem Set 7
