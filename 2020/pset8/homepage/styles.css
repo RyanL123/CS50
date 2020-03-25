@@ -1,0 +1,23 @@
+nav {
+    padding: 1%;
+    font-size: 20px;
+    background-color: #333;
+    margin-bottom: 5%;
+}
+
+nav a {
+    color: white;
+}
+
+a:hover {
+    color: #26dbff;
+    text-decoration: none;
+}
+
+i {
+    color: #333;
+}
+
+i:hover {
+    color: #26dbff;
+}
