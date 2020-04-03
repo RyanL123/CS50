@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Finance
+{% endblock %}
+
+{% block main %}
+    <table class="table">
+        <th>Symbol</th>
+        <th>Time</th>
+        <th>Action</th>
+        <th>Shares</th>
+        <th>Price/Share</th>
+        <th>Total Cost</th>
+        {% for transaction in transactions %}
+            {% if transaction["id"] == usr_id %}
+                <tr>
+                    <td>{{ transaction["symbol"] }}</td>
+                    <td>{{ transaction["time"] }} </td>
+                    {% if transaction["cash"] < 0 %}
+                        <td>Buy</td>
+                    {% else %}
+                        <td>Sell</td>
+                    {% endif %}
+                    <td>{{ transaction["shares"] }}</td>
+                    <td>{{ transaction["cost"]|usd }}</td>
+                    {% if transaction["cash"] < 0 %}
+                        <td>{{ -transaction["cash"]|usd }}</td>
+                    {% else %}
+                        <td>{{ transaction["cash"]|usd }}</td>
+                    {% endif %}
+                </tr>
+            {% endif %}
+        {% endfor %}
+    </table>  
+{% endblock %}

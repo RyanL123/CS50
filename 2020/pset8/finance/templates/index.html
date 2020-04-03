@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Assets
+{% endblock %}
+
+{% block main %}
+    <table class="table">
+        <th>Symbol</th>
+        <th>Amount</th>
+        <tr>
+            <td></td>
+            <td>Total: {{ total|usd }}</td>
+        </tr>
+    </table>
+{% endblock %}
